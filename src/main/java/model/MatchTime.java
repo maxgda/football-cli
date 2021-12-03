@@ -7,13 +7,12 @@ public class MatchTime implements Comparable<MatchTime> {
 
 
     public MatchTime(int time) {
-        if (time > 0)
+        if (time > 0) {
             this.basetime = time;
-        else
+        } else {
             this.basetime = 0;
-
+        }
         this.overtime = 0;
-
     }
 
     public MatchTime(int time, int ot) {
@@ -37,6 +36,14 @@ public class MatchTime implements Comparable<MatchTime> {
         } else {
             return Time.PENALTY_SHOOTOUT;
         }
+    }
+
+    public int getBasetime() {
+        return basetime;
+    }
+
+    public int getOvertime() {
+        return overtime;
     }
 
     public String toString() {
