@@ -7,11 +7,7 @@ public class MatchTime implements Comparable<MatchTime> {
 
 
     public MatchTime(int time) {
-        if (time > 0) {
-            this.basetime = time;
-        } else {
-            this.basetime = 0;
-        }
+        this.basetime = Math.max(time, 0);
         this.overtime = 0;
     }
 
