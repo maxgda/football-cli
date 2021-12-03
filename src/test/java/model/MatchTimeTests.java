@@ -14,7 +14,6 @@ public class MatchTimeTests {
         Assertions.assertEquals(0, matchTime.getBasetime());
     }
 
-
     @Test
     @DisplayName("when matchTime is valid - happy path")
     void happyPath() {
